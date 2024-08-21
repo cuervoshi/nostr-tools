@@ -19,7 +19,10 @@ export function matchFilter(filter: Filter, event: Event): boolean {
   if (filter.kinds && filter.kinds.indexOf(event.kind) === -1) {
     return false
   }
-  if (filter.authors && filter.authors.indexOf(event.pubkey) === -1) {
+
+  const d_pubkey: string = event.tags.find(tag => tag[0] === 'delegation')?.at(1) ?? ''
+
+  if (filter.authors && filter.authors.indexOf(event.pubkey) === -1 && (d_pubkey === '' || filter.authors.indexOf(d_pubkey) === -1)) {
     return false
   }
 
