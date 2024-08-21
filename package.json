@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "name": "nostr-tools",
+  "name": "@feririarte/test-nostr-tools",
   "version": "2.7.2",
   "description": "Tools for making a Nostr client.",
   "repository": {
