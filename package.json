@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "name": "@feririarte/test-nostr-tools",
+  "name": "@lawallet/nostr-tools",
   "version": "2.7.2",
   "description": "Tools for making a Nostr client.",
   "repository": {
